@@ -9,9 +9,9 @@ connection.connect((error) => {
   if (error) {
     console.log(error);
   } else {
-    console.log('Table connection successful!');
+    console.log('Connected to DB!');
     Tables.init(connection);
   }
 
-  app.listen(process.env.PORT || 3000, () => console.log('servidor rodando na porta 3000'));
+  app.listen(process.env.PORT || 3000);
 });

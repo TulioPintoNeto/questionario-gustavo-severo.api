@@ -3,7 +3,6 @@ const Form = require('../models/form');
 const handle = (req, res, callback) => {
   const formAnswers = req.body;
 
-  console.log(formAnswers);
   callback(formAnswers, res);
 };
 

@@ -19,9 +19,9 @@ const pedsql24 = {
     pedsql_3_2 int NOT NULL,
     pedsql_3_3 int NOT NULL,
     pedsql_3_4 int NOT NULL,
-    pedsql_4_0 int NOT NULL,
-    pedsql_4_1 int NOT NULL,
-    pedsql_4_2 int NOT NULL,
+    pedsql_4_0 int,
+    pedsql_4_1 int,
+    pedsql_4_2 int,
   `,
 };
 

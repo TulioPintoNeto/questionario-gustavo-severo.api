@@ -36,8 +36,6 @@ class Tables {
     this.connection.query(query, (error) => {
       if (error) {
         console.log(error);
-      } else {
-        console.log(`Table ${pedsql.name} was created`);
       }
     });
   }
