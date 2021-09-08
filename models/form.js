@@ -3,7 +3,6 @@ const connection = require('../infra/connection');
 class Form {
   static insert(tableName, formAnswers, res) {
     const sql = `INSERT INTO ${tableName} SET ?`;
-    console.log(formAnswers);
 
     return connection.query(sql, formAnswers, (error, result) => {
       if (error) {
