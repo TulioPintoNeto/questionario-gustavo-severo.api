@@ -1,11 +1,16 @@
 require('dotenv').config();
 const cors = require('cors');
-const express = require('./config/customExpress');
+const express = require('express');
+const consign = require('consign');
 const connection = require('./infra/connection');
 const Tables = require('./infra/tables');
 
 const app = express();
+
 app.use(cors({ origin: 'https://validapthsi-hcpa.com.br/' }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+consign().include('controllers').into(app);
 
 connection.connect((error) => {
   if (error) {
