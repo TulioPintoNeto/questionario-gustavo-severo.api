@@ -5,8 +5,7 @@ const cors = require('cors');
 module.exports = () => {
   const app = express();
 
-  app.use(cors({ origin: process.env.ALLOWED_ORIGIN }));
-  console.log(`Allowed CORS: ${process.env.ALLOWED_ORIGIN}`);
+  app.use(cors({ origin: 'https://validapthsi-hcpa.com.br/' }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
