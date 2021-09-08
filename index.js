@@ -7,7 +7,7 @@ const Tables = require('./infra/tables');
 
 const app = express();
 
-app.use(cors({ origin: 'https://validapthsi-hcpa.com.br/' }));
+app.use(cors({ origin: 'https://validapthsi-hcpa.com.br' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 consign().include('controllers').into(app);
