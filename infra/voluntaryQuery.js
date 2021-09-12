@@ -23,7 +23,7 @@ const voluntaryQuery = `
   city varchar(255) NOT NULL,
   state varchar(100) NOT NULL,
   childName varchar(255) NOT NULL,
-  childAge int NOT NULL,
+  childBirthDate date NOT NULL,
   procedureAge int NOT NULL,
   followingCity varchar(255) NOT NULL,
   followingState varchar(100) NOT NULL,
