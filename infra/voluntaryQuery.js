@@ -25,9 +25,9 @@ const voluntaryQuery = `
   childName varchar(255) NOT NULL,
   childBirthDate date NOT NULL,
   procedureAge int NOT NULL,
-  followingCity varchar(255) NOT NULL,
-  followingState varchar(100) NOT NULL,
-  followingType enum ('Público', 'Privado', 'Misto') NOT NULL,
+  followingCity varchar(255),
+  followingState varchar(100),
+  followingType enum ('Público', 'Privado', 'Misto'),
 `;
 
 module.exports = voluntaryQuery;
