@@ -28,6 +28,6 @@ connection.connect((error) => {
   }
 
   app.listen(process.env.PORT || 3000);
-});
 
-connection.end();
+  connection.end();
+});
