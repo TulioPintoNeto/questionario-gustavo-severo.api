@@ -6,10 +6,13 @@ const connection = require('./infra/connection');
 const Tables = require('./infra/tables');
 
 const app = express();
+const frontEndApp = 'https://validapthsi-hcpa.com.br';
 
 app.use(express.json());
 app.use((req, res, next) => {
-  app.use(cors({ origin: 'https://validapthsi-hcpa.com.br' }));
+  res.header('Access-Control-Allow-Origin', frontEndApp);
+  res.header('Access-Control-Allow-Methods', 'POST');
+  app.use(cors({ origin: frontEndApp }));
   next();
 });
 app.use(express.urlencoded({ extended: true }));
