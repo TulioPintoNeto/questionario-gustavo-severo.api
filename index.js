@@ -20,6 +20,7 @@ consign().include('controllers').into(app);
 
 connection.connect((error) => {
   if (error) {
+    console.log('here is something');
     console.log(error);
   } else {
     console.log('Connected to DB!');
